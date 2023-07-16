@@ -1,0 +1,17 @@
+h1{
+	width: 80px;
+	height: 72px;
+	background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.menu{
+	display: flex;
+	flex-wrap: wrap;
+}
