@@ -1,12 +1,9 @@
 .hero {
-	position: relative;
-	display: block;
 	height: 787px;
 	background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-
 }
 
 .value {
@@ -23,10 +20,28 @@
 .classic {
 	&-img {
 		display: block;
-		width: 416px;
+		width: 100%;
 
 		&:hover{
 			filter: contrast(1.2);
 		}
+	}
+}
+
+
+.bg-cobrand {
+	height: 608px;
+	background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.cobrand-img{
+	display: block;
+	width: 100%;
+
+	&:hover{
+		filter: contrast(1.2);
 	}
 }
