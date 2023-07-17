@@ -1,4 +1,4 @@
-h1{
+h1 {
 	width: 80px;
 	height: 72px;
 	background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png);
@@ -11,7 +11,18 @@ h1{
 	overflow: hidden;
 }
 
-.menu{
+.menu {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.cta-btn {
+	// display: inline-block;
+	padding: 6px 12px;
+	background: $primary;
+	color: $light;
+
+	&:hover{
+		background: $secondary;
+	}
 }
