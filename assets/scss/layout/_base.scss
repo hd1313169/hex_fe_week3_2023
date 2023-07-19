@@ -1,6 +1,9 @@
+*, *::after, *::before {
+	box-sizing: border-box;   
+}
+
 body{
     font-family: 'Noto Sans TC', 'Roboto',  sans-serif;
-    box-sizing: border-box;
     line-height: 1.5;
 }
 
@@ -11,4 +14,10 @@ a{
 
 span{
     vertical-align: bottom;
+}
+
+img{
+    vertical-align: middle;
+	width: 100%;
+	height: auto;
 }

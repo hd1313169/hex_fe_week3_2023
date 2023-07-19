@@ -16,7 +16,6 @@
 	}
 }
 
-
 .classic {
 	&-img {
 		display: block;
@@ -44,4 +43,16 @@
 	&:hover{
 		filter: contrast(1.2);
 	}
+}
+
+.form{
+	width: 50%;
+	margin: 0 auto;
+}
+
+.form-input{
+    width: 100%;
+    padding: 6px 12px;
+    border-radius: 0%;
+    border: 1px solid #000;
 }
