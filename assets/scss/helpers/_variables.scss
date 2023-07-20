@@ -11,7 +11,7 @@ $gray: #707070;
     padding: 0 12px;
     max-width: 1320px;
 } 
-@media (max-width: 992px){
+@media (max-width: 991px){
     .container{
         width: 100%;
         padding: 0 36px;
@@ -113,7 +113,12 @@ $gray: #707070;
 .mr-64{
     margin-right: 4rem;
 }
+@media (max-width: 767px){
 
+    .pb-md-0{
+        padding-bottom: 0;
+    }
+}
 // font
 .ff-en{
     font-family: 'Roboto',  sans-serif;

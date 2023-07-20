@@ -1,4 +1,49 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+
+
+.menu {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+	a:hover{
+        text-decoration: underline;
+    }
+}
+@media (max-width: 767px){
+    .container-md{
+        width: 100%;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 0;
+    }
+
+    .logo{
+        margin: 0 auto;
+        padding: 16px 0;
+    }
+	.menu{
+		width: 100%;
+		flex-wrap: wrap;  
+		li{
+			width: 50%;
+			border: 1px solid #fff;
+			padding: 12px 0px;
+            text-align: center;
+
+            &:hover{
+                background-color: $light;
+                a{
+                    text-decoration: none;
+                    color: $primary;
+                }
+            }
+
+		}
+	
+		a{
+            margin: 0;
+            text-align: center;
+			font-size: 14px;
+		}
+	}
 }
