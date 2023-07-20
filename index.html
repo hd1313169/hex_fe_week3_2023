@@ -11,17 +11,17 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
-  <script type="module" crossorigin src="/hex_fe_week3_2023/assets/main-5d00d114.js"></script>
-  <link rel="stylesheet" href="/hex_fe_week3_2023/assets/main-ccdf9ba4.css">
+  <script type="module" crossorigin src="/hex_fe_week3_2023/assets/main-05cdba4e.js"></script>
+  <link rel="stylesheet" href="/hex_fe_week3_2023/assets/main-86954fa8.css">
 </head>
 <link rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 <body>
   <div class="bg-primary">
-    <div class="container">
-        <div class="d-flex justify-between align-items-center flex-wrap py-16 fs-20">
-            <a href="../pages/index.html" class="d-block"><h1>logo</h1></a>
+    <div class="container container-md">
+        <div class="d-flex justify-between align-items-center flex-wrap py-16 pb-md-0 fs-20">
+            <a href="../pages/index.html" class="logo d-block"><h1>logo</h1></a>
             <ul class="menu">
                 <li><a href="#" class="text-light mr-64">系列鏡框</a></li>
                 <li><a href="#" class="text-light mr-64">門市據點</a></li>
@@ -44,8 +44,8 @@
         <!-- 品牌價值 -->
         <div class="py-80">
           <h3 class="fs-48 fw-bold text-center text-secondary mb-32">用專業的心，做專業的事</h3>
-          <ul class="d-flex justify-center">
-            <li class="value-item text-center mr-24">
+          <ul class="d-flex justify-center flex-wrap">
+            <li class="value-item text-center mr-24 mr-lg-24">
               <img class="mb-24 value-img"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-1.png?raw=true"
                 alt="單一價格">
@@ -59,7 +59,7 @@
               <h4 class="fs-24 fw-bold text-secondary mb-8">20 分鐘即可取件</h4>
               <p class="text-left">為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快20 分鐘即可完成。</p>
             </li>
-            <li class="value-item text-center mr-24">
+            <li class="value-item text-center mr-24 mr-lg-24">
               <img class="mb-24 value-img"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-3.png?raw=true"
                 alt="單一價格">
@@ -187,6 +187,37 @@
       </div>
     </div>
     <!-- 顧客推薦 end -->
+    <!-- 聯絡我們 -->
+    <div class="bg-light">
+      <div class="container">
+        <div class="form py-80">
+          <h3 class="fs-48 fw-bold text-center text-primary mb-48">聯絡我們</h3>
+          <p class="fs-20 mb-24">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+          
+          <form>
+            <label class="mb-8" for="name">姓名</label>
+            <input class="form-input mb-16" type="text" id="name" name="name" placeholder="陳小明">
+      
+            <label class="mb-8" for="phone">聯絡電話</label>
+            <input class="form-input mb-16" type="tel" id="phone" name="phone" placeholder="0912-345-678">
+      
+            <label class="mb-8" for="email">電子郵件</label>
+            <input class="form-input mb-16" type="email" id="email" name="email" placeholder="example@email.com">
+      
+            <label class="mb-8" for="response">意見反應</label>
+            <textarea class="form-input mb-16" type="text" id="response" name="response" placeholder="請輸入您的意見">請輸入您的意見</textarea>
+            
+            <div class="mb-48">
+                <input type="checkbox" name="agree" value="agree" >
+                <lable class="mr-4" for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</lable>
+            </div>
+        </form>   
+        <a href="#" class="form-btn">確認送出</a>
+
+        </div>
+      </div>
+    </div>
+    <!-- 聯絡我們 end -->
 
     <div class="bg-primary">
     <div class="container">
