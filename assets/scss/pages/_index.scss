@@ -1,9 +1,38 @@
+.section{
+	padding: 80px 0;
+}
+@media (max-width: 767px){
+	.section{
+		padding: 40px 0;
+	}
+}
 .hero {
 	height: 787px;
 	background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
-	background-position: center;
+	background-position:  center center;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+@media (max-width: 991px){
+	.hero {
+		height: 787px;
+		background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+		background-position:  center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+@media (max-width: 767px){
+	.hero {
+		height: 396px;
+
+		h2{
+			font-size: 24px;
+		}
+		h3{
+			font-size: 16px;
+		}
+	}
 }
 
 .value {
@@ -11,18 +40,59 @@
 		width: calc((100% - 24px * 3) / 4);
 	}
 
-	&-img {
+	&-img{
 		width: 100px;
 	}
 }
+@media (max-width: 991px){
+	.value {
+		&-item {
+			width: calc((100% - 24px) / 2);
+			margin-bottom: 24px;
+		}
+	}
+}
+@media (max-width: 767px){
+	.value {
+		&-item {
+			width: 100%;
+		}
+	}
+}
+
 
 .classic {
-	&-img {
-		display: block;
-		width: 100%;
+	&-item{
+		width: calc((100% - 24px *2) / 3);
 
 		&:hover{
 			filter: contrast(1.2);
+		}
+
+		img{
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+@media (max-width: 991px){
+	.classic {
+		&-item{
+			width: 100%;
+			margin-bottom: 24px;
+
+			img{
+				display: block;
+				margin: 0 auto;
+				width: 336px;
+			}
+		}
+	}
+}
+@media (max-width: 767px){
+	.classic {
+		&-item{
+			width: 100%;
 		}
 	}
 }
