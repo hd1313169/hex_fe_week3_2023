@@ -189,7 +189,7 @@
 // 顧客推薦 end
 // 聯絡表單
 .form {
-	width: 50%;
+	width: 33.125%;
 	margin: 0 auto;
 
 	&-input {
@@ -197,6 +197,20 @@
 		padding: 6px 12px;
 		border-radius: 0%;
 		border: 1px solid #000;
+	}
+
+	&-btn {
+		width: 65.4%;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		padding: 16px 0px;
+		background: $primary;
+		color: $light;
+	
+		&:hover{
+			background: $secondary;
+		}
 	}
 }
 
@@ -219,6 +233,10 @@
 @media (max-width: 767px) {
 	.form {
 		width: 100%;
+
+		&-btn {
+			width: 100%;
+		}
 	}
 }
 // 聯絡表單 end
