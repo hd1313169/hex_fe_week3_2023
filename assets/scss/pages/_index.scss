@@ -1,50 +1,63 @@
-.section{
+// 區塊
+.section {
 	padding: 80px 0;
 }
-@media (max-width: 767px){
-	.section{
+
+@media (max-width: 767px) {
+	.section {
 		padding: 40px 0;
 	}
 }
+
+// 區塊 end
+
+// 頁首
 .hero {
-	height: 787px;
+	padding: 296px 0;
 	background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
-	background-position:  center center;
+	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-@media (max-width: 991px){
+
+@media (max-width: 991px) {
 	.hero {
-		height: 787px;
+		padding: 296px 0;
 		background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
-		background-position:  center center;
+		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
 }
-@media (max-width: 767px){
-	.hero {
-		height: 396px;
 
-		h2{
+@media (max-width: 767px) {
+	.hero {
+		padding: 144px 0;
+
+		h2 {
 			font-size: 24px;
 		}
-		h3{
+
+		h3 {
 			font-size: 16px;
 		}
 	}
 }
 
+// 頁首 end
+
+// 品牌訴求
 .value {
 	&-item {
 		width: calc((100% - 24px * 3) / 4);
 	}
 
-	&-img{
+	&-img {
 		width: 100px;
 	}
 }
-@media (max-width: 991px){
+
+@media (max-width: 991px) {
 	.value {
 		&-item {
 			width: calc((100% - 24px) / 2);
@@ -52,7 +65,8 @@
 		}
 	}
 }
-@media (max-width: 767px){
+
+@media (max-width: 767px) {
 	.value {
 		&-item {
 			width: 100%;
@@ -60,28 +74,22 @@
 	}
 }
 
+// 品牌訴求 end
 
+// 經典系列
 .classic {
-	&-item{
+	&-item {
 		width: calc((100% - 24px *2) / 3);
-
-		&:hover{
-			filter: contrast(1.2);
-		}
-
-		img{
-			display: block;
-			margin: 0 auto;
-		}
 	}
 }
-@media (max-width: 991px){
+
+@media (max-width: 991px) {
 	.classic {
-		&-item{
+		&-item {
 			width: 100%;
 			margin-bottom: 24px;
 
-			img{
+			img {
 				display: block;
 				margin: 0 auto;
 				width: 336px;
@@ -89,40 +97,125 @@
 		}
 	}
 }
-@media (max-width: 767px){
+
+@media (max-width: 360px) {
 	.classic {
-		&-item{
-			width: 100%;
+		&-item {
+			a {
+				font-size: 32px;
+			}
 		}
 	}
 }
 
+// 經典系列 end
 
-.bg-cobrand {
-	height: 608px;
-	background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
+// 聯名設計
+.cobrand {
+	&-bg {
+		background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 
-.cobrand-img{
-	display: block;
-	width: 100%;
-
-	&:hover{
-		filter: contrast(1.2);
+	&-item {
+		width: 50%;
 	}
 }
 
-.form{
-	width: 50%;
-	margin: 0 auto;
+@media (max-width: 991px) {
+	.cobrand {
+		&-bg {
+			background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true);
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		&-item {
+			width: 100%;
+			margin-bottom: 24px;
+		}
+	}
 }
 
-.form-input{
-    width: 100%;
-    padding: 6px 12px;
-    border-radius: 0%;
-    border: 1px solid #000;
+@media (max-width: 767px) {
+	.cobrand {
+		&-bg {
+			background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true);
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		&-item {
+			a {
+				font-size: 32px;
+			}
+		}
+	}
 }
+
+// 聯名設計 end
+
+// 顧客推薦
+.recommend {
+	&-item {
+		width: calc((100% - 24px * 3)/4);
+		box-shadow: 0 2px 6px #00000029;
+		border-radius: 4px;
+	}
+}
+
+@media (max-width: 991px) {
+	.recommend {
+		&-item {
+			width: calc((100% - 24px)/2);
+			margin-bottom: 24px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.recommend {
+		&-item {
+			width: 100%;
+			margin-bottom: 16px;
+		}
+	}
+}
+
+// 顧客推薦 end
+// 聯絡表單
+.form {
+	width: 50%;
+	margin: 0 auto;
+
+	&-input {
+		width: 100%;
+		padding: 6px 12px;
+		border-radius: 0%;
+		border: 1px solid #000;
+	}
+}
+
+@media (max-width: 991px) {
+	.form {
+		width: 75%;
+		margin: 0 auto;
+
+		p {
+			font-size: 16px;
+		}
+
+		&-input {
+			width: 100%;
+			padding: 6px 12px;
+			border-radius: 0%;
+			border: 1px solid #000;
+		}
+	}
+}
+
+// 聯絡表單 end

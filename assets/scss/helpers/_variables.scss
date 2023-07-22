@@ -76,6 +76,9 @@ $gray: #707070;
 .pb-32{
     padding-bottom: 32px;
 }
+.m-0{
+    margin: 0 !important;
+}
 .mr-24{
     margin-right: 24px;
 }
@@ -181,13 +184,9 @@ $gray: #707070;
     border-bottom: 1px solid $light;
 }
 
-
-// rounded
-.rounded-4{
-    border-radius: 4px;
-}
-
-// shadow
-.shadow-card{
-    box-shadow: 0 2px 6px #00000029;
+// hover
+.hover-contrast{
+    &:hover {
+        filter: contrast(1.4);
+    }
 }
