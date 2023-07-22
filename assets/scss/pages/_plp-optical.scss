@@ -1,0 +1,120 @@
+
+.product {
+    &-header {
+        padding-bottom: 296px;
+        width: 50%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &:first-child {
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true);
+        }
+
+        &:nth-child(2) {
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true);
+        }
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    &-list {
+        padding: 32px 0 80px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &-item {
+        width: calc((100% - 24px * 3)/4);
+
+        margin-bottom: 80px;
+
+        &:nth-last-child(1), &:nth-last-child(2), &:nth-last-child(3), &:nth-last-child(4){
+            margin-bottom: 0;
+        }
+    }
+
+    &-content{
+        font-family: "roboto";
+        h4{
+            font-size: 24px;
+        }
+        p{
+            font-size: 24px;
+            color: $primary;
+            font-weight: 500;
+            
+        }
+    }
+    
+    &-color{
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+
+        &:first-child{
+            background-color: #5F3E2D;
+            margin-right: 8px;
+        }
+        
+        &:last-child{
+            background-color: #B75929;
+        }
+    }
+
+}
+
+@media (max-width: 991px) {
+    .product {
+        &-header {
+            &:first-child {
+                background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-1.png?raw=true);
+            }
+            &:nth-child(2) {
+                background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-2.png?raw=true);
+            }
+        }
+
+        &-item {
+            width: calc((100% - 24px)/2);
+            margin-bottom: 40px;
+
+            &:nth-last-child(1), &:nth-last-child(2){
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .product {
+        &-header {
+            padding-bottom: 136px;
+        }
+
+        h2,
+        h3 {
+            font-size: 24px;
+        }
+
+        &-list {
+            padding: 24px 0 64px 0;
+        }
+
+        &-item {
+            width: 100%;
+            margin-bottom: 24px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
