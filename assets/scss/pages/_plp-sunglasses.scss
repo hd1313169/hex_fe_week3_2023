@@ -1,0 +1,54 @@
+.product {
+    &-header-sunglasses {
+        padding-bottom: 296px;
+        width: 50%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &:first-child {
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true);
+        }
+
+        &:nth-child(2) {
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-4.png?raw=true);
+        }
+    }
+
+    &-item-sunglasses {
+        width: calc((100% - 24px * 2)/3);
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 991px) {
+    .product {
+        &-header-sunglasses {
+            &:first-child {
+                background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-3.png?raw=true);
+            }
+
+            &:nth-child(2) {
+                background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-4.png?raw=true);
+            }
+        }
+
+        &-item-sunglasses {
+            width: calc((100% - 24px)/2);
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .product {
+            &-header-sunglasses {
+                padding-bottom: 136px;
+            }
+
+            &-item-sunglasses {
+                width: 100%;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
