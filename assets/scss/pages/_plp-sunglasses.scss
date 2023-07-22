@@ -38,17 +38,16 @@
             margin-bottom: 40px;
         }
     }
+}
+@media (max-width: 767px) {
+    .product {
+        &-header-sunglasses {
+            padding-bottom: 136px;
+        }
 
-    @media (max-width: 767px) {
-        .product {
-            &-header-sunglasses {
-                padding-bottom: 136px;
-            }
-
-            &-item-sunglasses {
-                width: 100%;
-                margin-bottom: 24px;
-            }
+        &-item-sunglasses {
+            width: 100%;
+            margin-bottom: 24px;
         }
     }
 }
