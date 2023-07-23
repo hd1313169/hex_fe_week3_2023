@@ -186,10 +186,13 @@ h1 {
 
         &-item-sm {
             display: block;
+
+            span{
+                font-size: 16px;
+            }
         }
     }
 }
-
 // pagination end
 
 // subnav
