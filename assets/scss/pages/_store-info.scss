@@ -1,0 +1,59 @@
+.store{
+    &-info {
+        width: 40.586%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column; 
+
+        &-img{
+            width: 100%;
+            height: 224px;
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &-location{
+        width: calc(100% - 40.586% - 24px);
+        height: 414px;
+        background-image: url(../../images/location.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 991px){
+    .store{
+        &-info {
+            width: 100%;
+            flex-direction: row; 
+
+            &-img{
+                width: 48.419%;
+            }
+        }
+
+        &-location{
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 767px){
+    .store{
+        &-info {
+            width: 100%;
+            flex-direction: column; 
+
+            &-img{
+                width: 100%;
+            }
+        }
+
+        &-location{
+            width: 208px;
+        }
+    }
+}
