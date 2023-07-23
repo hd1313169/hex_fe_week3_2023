@@ -1,0 +1,134 @@
+.blog {
+    margin-bottom: 124px;
+
+    &-item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &-img {
+            width: calc((100% - 24px)/2);
+        }
+
+        &-body {
+            width: calc((100% - 24px)/2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h3 a {
+                font-size: 32px;
+                color: $secondary;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+
+        &-tag {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+
+            h4 a {
+                display: block;
+                font-family: "roboto";
+                font-size: 20px;
+                font-weight: 500;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+
+        &-btn {
+            display: block;
+            font-family: "roboto";
+            font-size: 36px;
+            font-weight: 900;
+            text-align: right;
+            color: $secondary;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+
+        &-content {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 6;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .blog {
+        margin-bottom: 80px;
+
+        &-item {
+            margin-bottom: 24px;
+
+            &-body {
+                width: calc((100% - 24px)/2);
+
+                h3 a {
+                    font-size: 24px;
+                }
+            }
+
+            &-tag {
+                h4 a {
+                    font-size: 16px;
+                    margin-bottom: 4px;
+                }
+            }
+
+            &-btn {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .blog {
+        margin-bottom: 64px;
+
+        &-item {
+            flex-direction: column;
+
+            &-img {
+                width: 100%;
+            }
+
+            &-body {
+                width: 100%;
+
+                h3 a {
+                    font-size: 24px;
+                }
+            }
+
+            &-tag {
+                h4 a {
+                    margin-bottom: 0px;
+                }
+            }
+
+            &-content {
+                display: none;
+            }
+        }
+    }
+}

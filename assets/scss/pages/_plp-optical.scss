@@ -73,7 +73,8 @@
 
 @media (max-width: 991px) {
     .product {
-        &-header {
+        &-header-optical {
+ 
             &:first-child {
                 background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-1.png?raw=true);
             }
@@ -98,7 +99,7 @@
 
 @media (max-width: 767px) {
     .product {
-        &-header {
+        &-header-optical {
             padding-bottom: 136px;
         }
 

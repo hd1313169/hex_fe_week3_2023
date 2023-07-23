@@ -57,6 +57,9 @@ $gray: #707070;
 .bg-primary{
     background-color: $primary;
 }
+.bg-secondary{
+    background-color: $secondary;
+}
 .bg-light{
     background-color: $light;
 }
@@ -79,8 +82,11 @@ $gray: #707070;
 .m-0{
     margin: 0 !important;
 }
-.mr-24{
-    margin-right: 24px;
+.mt-8{
+    margin-top: 8px;
+}
+.mt-16{
+    margin-top: 16px;
 }
 .mb-4{
     margin-bottom: 4px;
@@ -97,6 +103,9 @@ $gray: #707070;
 .mb-32{
     margin-bottom: 32px;
 }
+.mb-40{
+    margin-bottom: 40px;
+}
 .mb-48{
     margin-bottom: 48px;
 }
@@ -107,6 +116,12 @@ $gray: #707070;
 .mr-8{
     margin-right: 8px;
 }
+.mr-12{
+    margin-right: 12px;
+}
+.mr-24{
+    margin-right: 24px;
+}
 .mr-32{
     margin-right: 32px;
 }
@@ -115,6 +130,9 @@ $gray: #707070;
 }
 .mr-64{
     margin-right: 64px;
+}
+.ml-12{
+    margin-left: 12px;
 }
 @media (max-width: 767px){
 
@@ -154,11 +172,17 @@ $gray: #707070;
 .fs-14{
     font-size: 14px;
 }
+.fs-16{
+    font-size: 16px;
+}
 .fs-20{
     font-size: 20px;
 }
 .fs-24{
     font-size: 24px;
+}
+.fs-32{
+    font-size: 32px;
 }
 .fs-36{
     font-size: 36px;
@@ -191,5 +215,10 @@ $gray: #707070;
 .hover-contrast{
     &:hover {
         filter: contrast(1.2);
+    }
+}
+.hover-primary{
+    &:hover{
+        color: $primary;
     }
 }

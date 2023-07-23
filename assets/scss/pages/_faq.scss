@@ -1,0 +1,16 @@
+.faq{
+    &-item{
+        margin-bottom: 32px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .faq{
+        &-item{
+            margin-bottom: 24px;
+        }
+    }
+}

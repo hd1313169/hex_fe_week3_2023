@@ -18,7 +18,7 @@
     &-location{
         width: calc(100% - 40.586% - 24px);
         height: 414px;
-        background-image: url(../../images/location.png);
+        background-image: url(https://github.com/hd1313169/hex_fe_week3_2023/blob/main/assets/images/location.png?raw=true);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -30,6 +30,7 @@
         &-info {
             width: 100%;
             flex-direction: row; 
+            margin-bottom: 24px;
 
             &-img{
                 width: 48.419%;
@@ -53,7 +54,7 @@
         }
 
         &-location{
-            width: 208px;
+            height: 208px;
         }
     }
 }
