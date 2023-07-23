@@ -9,8 +9,9 @@
         }
 
         select {
+            width:304px;
             border: 1px solid #CED4DA;
-            padding: 6px 238px 6px 12px;
+            padding: 6px 12px;
 
             option {
                 font-size: 18px;
@@ -95,7 +96,7 @@
             }
 
             select {
-                width: 79.31%;
+                width: calc((100% - 64px - 8px));
                 padding: 6px 0 6px 12px;
 
             }
